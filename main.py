@@ -6,3 +6,18 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
+
+bill = float(input("How much is the bill? $"))
+ppl = int(input("How many people will be splitting?"))
+tip = int(input("How much do you want to tip?"))
+
+tip_percent = tip / 100 * bill
+total_bill = tip_percent + bill
+total_split = total_bill / ppl
+
+final_amount = ("{:.2f}".format(total_split))
+
+print(f"Each person will pay ${final_amount}.")
+
+# total = float(tip) /100 + int(bill) / int(ppl)
+# print(f"Each person should pay {total}.")
